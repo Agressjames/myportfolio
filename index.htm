@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Homepage</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <!-- Home Section -->
+  <section id="home" class="section home-section">
+    <div class="background-overlay">
+      <h1 class="name">Yash Gupta</h1>
+      <div class="border"></div>
+      <p class="random-sentences"></p>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae mauris vitae quam ullamcorper rutrum vel ut ipsum.</p>
+      <a href="#about" class="get-started">Get Started</a>
+    </div>
+  </section>
+
+  <!-- What I Do Section -->
+  <section id="what-i-do" class="section what-i-do-section">
+    <div class="block">
+      <div class="icon-container">
+        <div class="icon"><i class="fa fa-desktop"></i></div>
+      </div>
+      <h2>Right</h2>
+      <p>Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="block">
+      <div class="icon-container">
+        <div class="icon"><i class="fa fa-desktop"></i></div>
+      </div>
+      <h2>Middle</h2>
+      <p>Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="block">
+      <div class="icon-container">
+        <div class="icon"><i class="fa fa-desktop"></i></div>
+      </div>
+      <h2>Left</h2>
+      <p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,  Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,consectetur adipiscing elit lorem</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about-section">
+    <div class="left-block">
+      <h2>About Me</h2>
+      <h3>Web Developer</h3>
+      <p>Loconsectetur adipiscing elit. Quisque vitae mauris vitae quam ullamcorper rutrum vel ut ipsum.</p>
+    </div>
+    <div class="right-block">
+      <h2>Skills</h2>
+      <div class="progress-bar">
+        <div class="skill">
+          <span class="label">Web Design</span>
+          <div class="bar web-design"></div>
+          <span class="percentage">95%</span>
+        </div>
+        <div class="skill">
+          <span class="label">Mobile App</span>
+          <div class="bar mobile-app"></div>
+          <span class="percentage">80%</span>
+        </div>
+        <div class="skill">
+          <span class="label">HTML/CSS</span>
+          <div class="bar html-css"></div>
+          <span class="percentage">70%</span>
+        </div>
+        <div class="skill">
+          <span class="label">PHP</span>
+          <div class="bar php"></div>
+          <span class="percentage">60%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="section portfolio-section">
+    <h2 class="center-heading">Portfolio</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="profile.png" alt="Project 1">
+        <div class="portfolio-overlay">
+          <h3 class="title">Project 1</h3>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="profile.png" alt="Project 2">
+        <div class="portfolio-overlay">
+          <h3 class="title">Project 2</h3>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="profile.png" alt="Project 3">
+        <div class="portfolio-overlay">
+          <h3 class="title">Project 3</h3>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="profile.png" alt="Project 4">
+        <div class="portfolio-overlay">
+          <h3 class="title">Project 4</h3>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="profile.png" alt="Project 5">
+        <div class="portfolio-overlay">
+          <h3 class="title">Project 5</h3>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="profile.png" alt="Project 6">
+        <div class="portfolio-overlay">
+          <h3 class="title">Project 6</h3>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="left-block">
+      <h2>Contact Me</h2>
+      <div class="contact-info">
+        <div class="icon"><i class="fa fa-phone"></i></div>
+        <span class="label">Phone:</span>
+        <p>+91 8176977294</p>
+      </div>
+      <div class="contact-info">
+        <div class="icon"><i class="fa fa-envelope"></i></div>
+        <span class="label">Email:</span>
+        <p>yasu67@gmail.com</p>
+      </div>
+      <div class="contact-info">
+        <div class="icon"><i class="fa fa-globe"></i></div>
+        <span class="label">Location:</span>
+        <p>Jaunpur, Uttar Pradesh</p>
+      </div>
+    </div>
+    <div class="right-block">
+      <h2>Get in Touch</h2>
+      <form action="#" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name">
+        <input type="email" name="email" placeholder="Your Email">
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit" class="send-button">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer-section">
+    <p class="copyright">Copyright &copy; 2023
+    <a href="#">Yash Gupta</a>
+    </p>
+    <div class="social-icons">
+      <a href="#" ><i class="fa fa-facebook"></i></a>
+      <a href="#" ><i class="fa fa-github"></i></a>
+      <a href="#" ><i class="fa fa-instagram"></i></a>
+      <a href="#" ><i class="fa fa-linkedin"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
