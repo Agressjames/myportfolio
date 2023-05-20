@@ -1,0 +1,469 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+.label{
+  color:#c7c7c7;
+}
+p {
+  margin: 0;
+  color:#606060;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Home Section */
+.home-section {
+  position: relative;
+  height: 90vh;
+  background-image: url("profile.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 4rem;
+  width:100%;
+  height: 78%;
+  text-align: center;
+  color: #fff;
+}
+
+.name {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.border {
+  width: 6rem;
+  height: 3px;
+  background-color: #fff;
+  margin: 0 auto 1rem;
+}
+
+.random-sentences {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  /* font-size: 1.2rem; */
+  margin-bottom: 2rem;
+}
+
+.get-started {
+  font-size: 1.2rem;
+  background-color: #fff;
+  color: #000;
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+.get-started:hover {
+  background-color: #f2f2f2;
+}
+
+/* What I Do Section */
+.what-i-do-section {
+  padding: 3rem 0;
+  background-color: #292929;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block {
+  color:#fff;
+  text-align: center;
+  max-width: 300px;
+  margin: 0 1rem;
+}
+
+.icon-container {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: transparent;
+  /* border-radius: 50%; */
+ 
+  
+}
+
+
+/* Add a white circle around the icons */
+.icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 8px;
+  width: 40px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  background: none;
+  border: 2px solid #ffffff;
+  margin-bottom: 1rem;
+}
+
+/* Change the color of the icons to red */
+.icon i {
+  color: rgba(148, 42, 42, 0.984);
+  font-size: 25px;
+}
+
+.about-section {
+  display: flex;
+  padding:40px;
+  background-color: #000000;
+  justify-content: space-between;
+}
+
+.left-block {
+  width: 50%;
+  padding-left: 30px;
+ }
+
+.right-block {
+  width: 35%;
+  height: 100%;
+}
+
+.left-block h2 {
+  color: #fff;
+}
+
+.left-block h3 {
+  color: rgba(148, 42, 42, 0.984);
+}
+
+.left-block p {
+  color: #606060;
+}
+
+.right-block h2 {
+  color: #fff;
+}
+
+.progress-bar {
+  margin-top: 1rem;
+}
+
+.skill {
+  margin-bottom: 1rem;
+}
+
+.bar {
+  height: 10px;
+  border-radius: 5px;
+  background-color: #F64747;
+}
+
+.web-design {
+  
+  width: 95%;
+}
+
+.mobile-app {
+  width: 80%;
+  background-color: #F9690E;
+}
+
+.html-css {
+  width: 70%;
+  background-color: #2C3E50;
+}
+
+.php {
+  width: 60%;
+  background-color: #9B59B6;
+}
+
+.percentage {
+  font-size: 0.8rem;
+  color: #676767;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+  padding: 4rem 0;
+  background-color: #292929;
+  padding: 40px;
+  text-align: center;
+}
+
+.center-heading {
+  margin-bottom: 2rem;
+  color:#fff;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.05);
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(148, 42, 42, 0.984)  ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-overlay:hover {
+  opacity: 70%;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 3rem 0;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-block {
+  max-width: 400px;
+  margin-right: 2rem;
+}
+
+.right-block {
+  flex-grow: 1;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+
+
+.contact-info p {
+  margin: 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 90%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.send-button {
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+  background-color: #F9690E;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: #F64747;
+}
+
+/* Footer Section */
+.footer-section {
+  padding: 2rem;
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons .icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+}
+.social-icons i{
+  font-size: 20px;
+  margin: auto;
+}
+/* Mobile Styles */
+@media (max-width: 767px) {
+  /* Adjust the font sizes and paddings for mobile devices */
+  h1.name {
+    font-size: 32px;
+    padding: 10px;
+  }
+  
+  p.description {
+    font-size: 14px;
+    padding: 10px;
+  }
+  
+  a.get-started {
+    padding: 10px 20px;
+  }
+  
+  /* Modify the layout of the What I Do section for mobile devices */
+  .what-i-do-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Adjust the width of the blocks in the What I Do section for mobile devices */
+  .block {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  /* Adjust the layout of the Portfolio section for mobile devices */
+  .portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Adjust the width of the portfolio items for mobile devices */
+  .portfolio-item {
+    width: 100%;
+  }
+  
+  /* Adjust the layout of the Contact section for mobile devices */
+  .contact-section .left-block,
+  .contact-section .right-block {
+    width: 100%;
+  }
+  
+  /* Adjust the layout of the Contact section for mobile devices */
+  .contact-section .left-block {
+    margin-bottom: 20px;
+  }
+  
+  /* Adjust the layout of the Contact section for mobile devices */
+  .contact-section .right-block {
+    margin-bottom: 0;
+  }
+  
+  /* Adjust the layout of the About section for mobile devices */
+  .about-section .left-block,
+  .about-section .right-block {
+    width: 100%;
+  }
+  
+  /* Adjust the layout of the About section for mobile devices */
+  .about-section .left-block {
+    margin-bottom: 20px;
+  }
+  
+  /* Adjust the layout of the About section for mobile devices */
+  .about-section .right-block {
+    margin-bottom: 0;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Adjust the font sizes and paddings for tablet devices */
+  h1.name {
+    font-size: 48px;
+    padding: 20px;
+  }
+  
+  p.description {
+    font-size: 16px;
+    padding: 20px;
+  }
+  
+  a.get-started {
+    padding: 15px 30px;
+  }
+  
+  /* Modify the layout of the What I Do section for tablet devices */
+  .what-i-do-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Adjust the width of the blocks in the What I Do section for tablet devices */
+  .block {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+  
+  /* Adjust the layout of the Portfolio section for tablet devices */
+  .portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Adjust the width of the portfolio items for tablet devices */
+  .portfolio-item {
+    width: 100%;
+  }
+  
+  /* Adjust the layout of the Contact section for tablet devices */
+  .contact-section .left-block,
+  .contact-section .right-block {
+    width: 100%;
+  }
+  
+  /* Adjust the layout of the About section for tablet devices */
+  .about-section .left-block,
+  .about-section .right-block {
+    width: 100%;
+  }
+}
